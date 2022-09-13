@@ -1,0 +1,224 @@
+@mixin TarjetasMenu{
+    font-family: $FontGoogle;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.Bebidas{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url("../img/BebidasFondo3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__Title{
+        width: 100%;
+        text-align: center;
+        color:$NeutralColor1;
+        font-family: $FontGoogle;
+        font-size: 20px;
+        position: absolute;
+        margin-top: 7%;
+    }
+    &__TitleMain{
+        
+        text-transform: uppercase;
+    }
+    &__TitleSub{
+        text-transform: lowercase;
+    }
+}
+
+.Catalogo{
+    width: 100%;
+    height: 80%;
+    padding: 20px;
+    perspective: 1000px;
+    display: flex;
+    justify-content: space-around;    
+    position: absolute;
+    margin-top: 15%;
+    &__Cocteles{
+       width: 45%;
+       height: 80%; 
+       padding: 5px;
+       perspective: 1000px;
+       position: relative;  
+    }
+    &__Cocteles__Contenido{
+        width: calc(100% - 30px);
+        height: 95%;
+        position: absolute;
+        padding: 11px;
+        perspective: 1000px;
+        transition: 5s;
+        transform-style: preserve-3d;
+    }
+    &__Cocteles__Paginas{
+        width: calc(100% - 20px);
+        height: 95%;
+        transform-style: preserve-3d;
+        position: absolute;
+    }
+    &__Cocteles__Paginas__Frontend{
+        backface-visibility: hidden;
+    }
+    &__Cocteles__Paginas__Backend{
+      transform: rotateY(180deg);
+      backface-visibility: hidden;
+
+    }
+}
+.ContenidoPaginas{
+    &__Front{
+        width: 50%;
+        height: 100%;
+        float: right;
+        background-color: yellow;
+        @include TarjetasMenu;
+        color: rgb(126, 34, 168);
+        &__Cerveza{
+            background-color: red;
+        }
+    }
+    &__Back{
+        width: 50%;
+        height: 100%;
+        color: rgb(113, 25, 196);
+        float: left;
+        @include TarjetasMenu;
+        
+   }
+   &__Front__PrimerPagina{
+       background-color: transparent;
+       background-image: url("../img/FondoCocteles.jpg");
+       background-position: center;
+   }
+  
+   &__Back__PrimerPagina{
+    background-color: transparent;
+    background-image: url("../img/FondoCocteles.jpg");
+   }
+
+   &__Front__SegundaPagina{
+    background-color: transparent;
+    background-image: url("../img/FondoCoctelMargarita.jpg");
+   }
+
+   &__Back__SegundaPagina{
+    background-color: transparent;
+    background-image: url("../img/FondoCoctelMargarita.jpg");
+   }
+   &__Front__TerceraPagina{
+    background-color: transparent;
+    background-image: url("../img/FondoCoctelMojito.jpg");
+   }
+   &__Back__TerceraPagina{
+    background-color: transparent;
+    background-image: url("../img/FondoCoctelMojito.jpg");
+   } 
+   &__Front__PrimerPaginaC{
+    background-color: transparent;
+    background-image: url("../img/FondoCerveza.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    }
+    &__Back__PrimerPaginaC{
+        background-image: url("../img/FondoCerveza.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    &__Front__SegundaPaginaC{
+        background-color: transparent;
+        background-image: url("../img/FondoMichelada.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    &__Back__SegundaPaginaC{
+        background-color: transparent;
+        background-image: url("../img/FondoMichelada.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    &__Front__TerceraPaginaC{
+        background-color: transparent;
+        background-image: url("../img/FondoCorona.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    &__Back__TercerPaginaC{
+        background-color: transparent;
+        background-image: url("../img/FondoCorona.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    } 
+}
+
+
+.Catalogo__Portada{
+    background:linear-gradient(brown, black);
+    width:calc(100% - 10px);
+    height: calc(100% - 20px);
+    border: 2px dotted rgb(150, 6, 155);
+    position: absolute;
+    z-index: -3;
+    padding: 10px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+    &__Frontend{
+        color: rgb(255, 255, 255);
+        width: 45%;
+        height: 99%;
+        background-image: url("../img/PortadaCocteles.jpg");
+        background-position: center;
+        @include TarjetasMenu;
+        &__TextoFront{
+            width: 200px;
+            height: 180px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+    &__Backend{
+        color: rgb(255, 255, 255);
+        width: 45%;
+        background-image: url("../img/PortadaCocteles.jpg");
+        background-position: center;
+        height: 99%;
+        display: block;
+        float: left;
+        @include TarjetasMenu;
+        }
+}
+
+.ContenidoPaginas__Btn2{
+    width: 100px;
+    padding: 5px;
+    border: none;
+    background-color: rgb(20, 20, 20);
+    font-size: 15px;
+    color: rgb(227, 240, 227);
+    border-radius: 50px;
+    box-shadow: 0px 2px 5px rgba(105, 10, 85, 0.925);
+    &:hover{
+        background-color: rgb(212, 223, 197);
+        font-size: 15px;
+        color: rgb(20, 36, 20);
+    }
+}
+
+.EfectoHoja{
+    transform: rotateY(-150deg);
+    transition: 5s;
+}

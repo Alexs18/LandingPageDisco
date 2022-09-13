@@ -1,0 +1,94 @@
+.LogoOnclub{
+    width: 200px;
+    height: 200px;
+    top: 15%;
+    left: 43%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__Main{
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: $NeutralColor;
+        border: 7px solid $PrimaryColor;
+        &__Text{
+            margin-top:85px;
+            width: 200px;
+            font-size: 30px;
+            color: $NeutralColor1;
+            text-align: center;
+            margin-left: -70px;
+            text-transform: uppercase;
+        }
+    }
+    &__Main::after{
+        content: "";
+        position: absolute;
+        top: 11%;
+        left: 5%;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        border: 7px solid rgb(236, 232, 232);
+        border-top: 2px solid rgb(22, 21, 21);
+    }
+    &__Main::before{
+        content: "";
+        position: absolute;
+        top: 6%;
+        left: 42%;
+        width: 10px;
+        z-index: 1;
+        height: 47px;
+        border-radius: 50px;
+        background-color:rgb(236, 226, 226);
+    }
+    &__AboutUs{
+        position: absolute;
+        top: 46%;
+        left: 20%;
+    }
+    &__AboutUs1{
+        position: relative;
+        width: 100px;
+        height: 100px;
+        top: 0;
+        left: 0;
+    }
+    &__ContactUs{
+        position: absolute;
+        top: 27%;
+        left: 35%;
+    }
+    &__ContactUs1{
+        position: relative;
+        width: 100px;
+        height: 100px;
+        top: 0;
+        left: 0;
+    }
+    &__Footer{
+        position: absolute;
+        top: 10%;
+        left: 45%;
+    }
+    &__Footer1{
+        position: relative;
+        width: 100px;
+        height: 100px;
+        top: 0;
+    }
+    &__Ubicacion{
+        position: absolute;
+    }
+    &__Ubicacion1{
+        position: relative;
+        width: 100px;
+        height: 100px;
+        top: 150px;
+    }
+
+}

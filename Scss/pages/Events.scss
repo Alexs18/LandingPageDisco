@@ -1,0 +1,94 @@
+.Events{
+    width: 100%;
+    height: calc(100vh + 100px);
+    background:linear-gradient($NeutralColor, $PrimaryColor 950px, $ThearColor 600px);
+    position: relative;
+    background-image: url("/Practicas/LandingPageOnClub/img/OnclubInit3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.Eventos{
+    display: flex;
+    background-color: red;
+    padding: 0 20px 0 20px;
+    position: relative;
+    //grid-template-columns: repeat(2, 1fr);
+    gap: 0.5em;
+    //grid-template-rows: 600px;
+    &__Contenido{
+        margin: 145px 0 0 0;
+        background-color: yellow;
+    }
+    &__Titulo{
+        text-align: center;
+        color: $NeutralColor1;
+        font-family: $FontGoogle;
+    }
+    &__Titulo2{
+        color: $NeutralColor1;
+        font-family: $FontGoogle;
+    }
+    &__Evento1{
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &__Evento1Descripcion{
+        background-color:$NeutralColor;
+        width: 90%;
+        height: 100%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+    &__Imagen1{
+       object-fit: cover;
+    }
+    &__Textos{
+        transition: 1s;
+        font-size: 30px;
+        background: linear-gradient(yellow, $ThearColor);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-family: $FontGoogle;
+        animation: Letra 2s infinite;
+    }
+    &__Evento2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 200px 200px ;
+        gap: 1em;
+    }
+    &__Evento2Descripcion{
+        background-color:$NeutralColor;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    &__Imagen2{
+        width: 200px;
+        height: 150px;
+    }
+    &__Textos2{
+        font-size: 15px;
+        padding: 2px;
+        font-family: $FontGoogle;
+        color: $NeutralColor1;
+        background: linear-gradient(rgb(255, 255, 255), rgb(229, 255, 0));
+      -webkit-background-clip: text;
+        color: transparent;
+    }
+}
+.Contenido1{
+  width: 55%;
+  height: auto;
+}
+.Contenido2{
+    width: 50%;
+    
+}

@@ -1,0 +1,122 @@
+@mixin  BackgroundPhoto{
+    
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    
+}
+@mixin BotonesTestimonios {
+    padding: 10px;
+    width: 130px;
+    border: none;
+    background-color: rgb(122, 37, 122);
+    color: $NeutralColor1;
+    font-family: $FontGoogle;
+    box-shadow: 0 7px 20px blue;
+    border-radius: 100px;
+   
+}
+.Testimonials{
+    width: 100%;
+    height: 100vh;
+    background-image:url("../img/Testimonios.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: $FontGoogle;
+    position: relative;
+    &__Content{
+        position: absolute;
+        margin: 5% 0 0 1%;
+        padding:30px 0 100px 0;
+        
+    }
+    &__Title{
+        width: 100%;
+        height: 10%;
+        text-align: center;
+        color: $NeutralColor1;
+        font-size: 40px;
+    }
+    &__Card{
+            margin-top: 5%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 360px;
+            gap: 1em;
+            &__Content{
+                background:linear-gradient(rgb(128, 0, 0), rgb(37, 37, 139));
+                width: 300px;
+                margin-left: 5px;           
+                &__Img{
+                    width: 100%;
+                    height: 85%;
+                    background-color:yellow;
+                    position: relative;
+                    transition: 1s;
+                }
+                &__Text{
+                    width: 100%;
+                    height: 15%;
+                    text-align: center;
+                    margin-top: 5%;
+                    color: yellow;
+                }
+                &__Btn{
+                    font-size:35px;
+                    color: rgb(0, 0, 0);
+                    position: absolute;
+                    top: 80%;
+                    animation: BtnTestimonios 1s infinite;
+                }
+                &__TextHidden{
+                    width: 100%;
+                    background-color: transparent;
+                    position: absolute;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    clip-path: circle(20% at 50% 96%);
+                    transition: 1s;
+                    &__Text{
+                        margin-top: 60px;
+                        padding: 10px;
+                        line-height: 20px;
+                        color: rgb(0, 0, 0);
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+}
+.Expandir{
+    clip-path: circle(100% at 50% 50%);
+}
+
+.Content1{
+    background-image: url("../img/Juan.jpg");
+    @include BackgroundPhoto;
+}
+.Content2{
+    background-image: url("../img/Maria.jpg");
+    @include BackgroundPhoto;
+}
+.Content3{
+    background-image: url("../img/Carlos.jpg");
+    @include BackgroundPhoto;
+}
+.Content4{
+    background-image: url("../img/Dayana.jpg");
+    @include BackgroundPhoto;
+}
+@keyframes BtnTestimonios{
+    0%{
+        top: 85%;
+    }
+}

@@ -1,0 +1,39 @@
+.Footer{
+    width: 100%;
+    height: auto;
+    background:linear-gradient($NeutralColor, $PrimaryColor);
+    position: absolute;
+    &__Contenido{
+        margin:15% 20px 0 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 300px;
+        gap: 1em;
+        &__section{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: $FontGoogle;
+            &__Title{
+                font-size: 20px;
+                color: $PrimaryColor;
+            }
+            &__List{
+                list-style: none;
+                line-height: 35px;
+                color: $NeutralColor1;
+            }
+        }
+    }
+    &__Copy{
+        font-size: $FontGoogle;
+        margin-top: 2%;
+        text-align: center;
+        padding-bottom: 20px;
+        color: $NeutralColor1;
+
+    }
+
+}

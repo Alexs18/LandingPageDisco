@@ -1,0 +1,42 @@
+.Ubicacion{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/FondoContac.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__Content{
+        position: relative;
+        height: 90%;
+        &__Title{
+            text-align: center;
+            font-size: 26px;
+            color: $NeutralColor1;
+            font-family: $FontGoogle;
+            padding: 35px 0 0 0;
+            text-transform: uppercase;
+        }
+        &__map{
+           display: flex;
+           position: absolute;
+           width: 100%;
+           height: 90%;
+           gap: 2em;
+           &__google{
+                width: 63%;
+                height: 90%;
+                position: relative;
+                border: 0;
+                margin: 40px 0 0 70px;
+                
+            }
+           &__Logo{
+               position: relative;
+               margin: 50px 0 0 100px;
+               width: 30px;
+                height: 200px;
+            }
+        }
+        
+    }
+}

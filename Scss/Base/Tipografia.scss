@@ -1,0 +1,38 @@
+/*Tipografia de Header*/
+.Header1__PrimaryText{
+    color: $NeutralColor1;
+    font-family: $FontGoogle; 
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    &__Main{
+       font-size: 30px;
+    }
+    &__sub{
+        font-size: 18px;
+    }
+}
+/*Tipografia de About*/
+.Events{
+    &__Title{
+
+        margin-top: 50px;
+        width: calc(100% - 20px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__Main{
+            width: 40%;
+            color:$NeutralColor1;
+            font-family: $FontGoogle;
+            text-align: center;
+            &__Sub1{
+                text-transform: uppercase;
+            }
+            &__Sub2{
+                text-transform: lowercase;
+            }
+        }
+    }
+}

@@ -1,0 +1,966 @@
+/**/
+/*Bordes fuera*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+/*Fuenta para los textos*/
+/*Paleta de colores*/
+/*Fuente de las letras*/
+.Header {
+  width: 100%;
+  height: 100vh;
+  position: relative; }
+  .Header__side__1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/OnclubInit6.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: OpacityHeader 10s infinite;
+    transition: 5s; }
+  .Header__side__2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/OnclubInit2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: OpacityHeader1 10s infinite;
+    transition: 5s; }
+  .Header__side__3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/OnclubInit7.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: OpacityHeader2 10s infinite;
+    transition: 5s; }
+  .Header__side__4 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/OnclubInit5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: OpacityHeader3 10s infinite;
+    transition: 5s; }
+  .Header__TextHeader {
+    top: 40%;
+    left: 32%;
+    position: absolute; }
+  .Header__Btn {
+    position: absolute;
+    top: 90px;
+    top: 60%;
+    left: 46%; }
+
+@keyframes OpacityHeader {
+  0% {
+    opacity: 1; }
+  25% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  75% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes OpacityHeader1 {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  75% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@keyframes OpacityHeader2 {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  75% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@keyframes OpacityHeader3 {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  75% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes Letra {
+  0% {
+    width: auto; }
+  75% {
+    background: linear-gradient(yellow, #161515);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 45px; } }
+
+/*Tipografia de Header*/
+.Header1__PrimaryText {
+  color: white;
+  font-family: "Merriweather", serif;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column; }
+  .Header1__PrimaryText__Main {
+    font-size: 30px; }
+  .Header1__PrimaryText__sub {
+    font-size: 18px; }
+
+/*Tipografia de About*/
+.Events__Title {
+  margin-top: 50px;
+  width: calc(100% - 20px);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .Events__Title__Main {
+    width: 40%;
+    color: white;
+    font-family: "Merriweather", serif;
+    text-align: center; }
+    .Events__Title__Main__Sub1 {
+      text-transform: uppercase; }
+    .Events__Title__Main__Sub2 {
+      text-transform: lowercase; }
+
+/*Botones Header*/
+.btn_Header {
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-family: "Merriweather", serif;
+  font-size: 13px;
+  width: 100px;
+  text-align: center;
+  display: inline-block; }
+  .btn_Header:hover {
+    padding: 11px;
+    box-shadow: 0px 10px 10px black; }
+
+.Events {
+  width: 100%;
+  height: calc(100vh + 100px);
+  background: linear-gradient(#161515, #4834fa 950px, #642d64 600px);
+  position: relative;
+  background-image: url("/img/OnclubInit3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.Eventos {
+  display: flex;
+  background-color: red;
+  padding: 0 20px 0 20px;
+  position: relative;
+  gap: 0.5em; }
+  .Eventos__Contenido {
+    margin: 145px 0 0 0;
+    background-color: yellow; }
+  .Eventos__Titulo {
+    text-align: center;
+    color: white;
+    font-family: "Merriweather", serif; }
+  .Eventos__Titulo2 {
+    color: white;
+    font-family: "Merriweather", serif; }
+  .Eventos__Evento1 {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+  .Eventos__Evento1Descripcion {
+    background-color: #161515;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column; }
+  .Eventos__Imagen1 {
+    object-fit: cover; }
+  .Eventos__Textos {
+    transition: 1s;
+    font-size: 30px;
+    background: linear-gradient(yellow, #642d64);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: "Merriweather", serif;
+    animation: Letra 2s infinite; }
+  .Eventos__Evento2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px 200px;
+    gap: 1em; }
+  .Eventos__Evento2Descripcion {
+    background-color: #161515;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .Eventos__Imagen2 {
+    width: 200px;
+    height: 150px; }
+  .Eventos__Textos2 {
+    font-size: 15px;
+    padding: 2px;
+    font-family: "Merriweather", serif;
+    color: white;
+    background: linear-gradient(white, #e5ff00);
+    -webkit-background-clip: text;
+    color: transparent; }
+
+.Contenido1 {
+  width: 55%;
+  height: auto; }
+
+.Contenido2 {
+  width: 50%; }
+
+.Servicios {
+  background-color: #161515;
+  height: 100vh;
+  width: 100%; }
+  .Servicios__Title {
+    position: absolute;
+    color: white;
+    font-family: "Merriweather", serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin-top: 60px; }
+  .Servicios__Tarjetas {
+    width: 100%;
+    position: absolute;
+    margin-top: -35%; }
+
+.Tarjetas {
+  margin: -50px 10px 10px 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+  .Tarjetas__Ofertas {
+    height: 330px;
+    width: 310px;
+    font-family: "Merriweather", serif;
+    color: yellow; }
+  .Tarjetas__TextoMain {
+    margin-top: 78%;
+    position: absolute;
+    text-align: center;
+    background-color: #0026ff;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 10px; }
+  .Tarjetas__TextoSub {
+    margin-top: 100%;
+    position: absolute;
+    text-align: center;
+    background-color: #161515;
+    width: 100%;
+    color: white; }
+
+.Tarjeta1 {
+  background-image: url("/img/BarraLibre.jpg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-origin: initial;
+  position: relative; }
+
+.Tarjeta1::after {
+  position: absolute;
+  content: "Free";
+  background-color: #2600ff;
+  width: 60px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: yellow;
+  font-size: 22px;
+  left: 50px; }
+
+.Tarjeta2 {
+  background-image: url("/img/GrupoMasAnimado.jpg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-origin: initial;
+  position: relative; }
+
+.Tarjeta2::after {
+  position: absolute;
+  content: "Free";
+  background-color: #2600ff;
+  width: 60px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: yellow;
+  font-size: 22px;
+  left: 50px; }
+
+.Tarjeta3 {
+  background-image: url("/img/EventosEnVivo.jpg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-origin: initial;
+  position: relative; }
+
+.Tarjeta3::after {
+  position: absolute;
+  content: "Free";
+  background-color: #2600ff;
+  width: 60px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: yellow;
+  font-size: 22px;
+  left: 50px; }
+
+.Bebidas {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: url("../img/BebidasFondo3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .Bebidas__Title {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: "Merriweather", serif;
+    font-size: 20px;
+    position: absolute;
+    margin-top: 7%; }
+  .Bebidas__TitleMain {
+    text-transform: uppercase; }
+  .Bebidas__TitleSub {
+    text-transform: lowercase; }
+
+.Catalogo {
+  width: 100%;
+  height: 80%;
+  padding: 20px;
+  perspective: 1000px;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  margin-top: 15%; }
+  .Catalogo__Cocteles {
+    width: 45%;
+    height: 80%;
+    padding: 5px;
+    perspective: 1000px;
+    position: relative; }
+  .Catalogo__Cocteles__Contenido {
+    width: calc(100% - 30px);
+    height: 95%;
+    position: absolute;
+    padding: 11px;
+    perspective: 1000px;
+    transition: 5s;
+    transform-style: preserve-3d; }
+  .Catalogo__Cocteles__Paginas {
+    width: calc(100% - 20px);
+    height: 95%;
+    transform-style: preserve-3d;
+    position: absolute; }
+  .Catalogo__Cocteles__Paginas__Frontend {
+    backface-visibility: hidden; }
+  .Catalogo__Cocteles__Paginas__Backend {
+    transform: rotateY(180deg);
+    backface-visibility: hidden; }
+
+.ContenidoPaginas__Front {
+  width: 50%;
+  height: 100%;
+  float: right;
+  background-color: yellow;
+  font-family: "Merriweather", serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  color: #7e22a8; }
+  .ContenidoPaginas__Front__Cerveza {
+    background-color: red; }
+
+.ContenidoPaginas__Back {
+  width: 50%;
+  height: 100%;
+  color: #7119c4;
+  float: left;
+  font-family: "Merriweather", serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column; }
+
+.ContenidoPaginas__Front__PrimerPagina {
+  background-color: transparent;
+  background-image: url("../img/FondoCocteles.jpg");
+  background-position: center; }
+
+.ContenidoPaginas__Back__PrimerPagina {
+  background-color: transparent;
+  background-image: url("../img/FondoCocteles.jpg"); }
+
+.ContenidoPaginas__Front__SegundaPagina {
+  background-color: transparent;
+  background-image: url("../img/FondoCoctelMargarita.jpg"); }
+
+.ContenidoPaginas__Back__SegundaPagina {
+  background-color: transparent;
+  background-image: url("../img/FondoCoctelMargarita.jpg"); }
+
+.ContenidoPaginas__Front__TerceraPagina {
+  background-color: transparent;
+  background-image: url("../img/FondoCoctelMojito.jpg"); }
+
+.ContenidoPaginas__Back__TerceraPagina {
+  background-color: transparent;
+  background-image: url("../img/FondoCoctelMojito.jpg"); }
+
+.ContenidoPaginas__Front__PrimerPaginaC {
+  background-color: transparent;
+  background-image: url("../img/FondoCerveza.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.ContenidoPaginas__Back__PrimerPaginaC {
+  background-image: url("../img/FondoCerveza.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.ContenidoPaginas__Front__SegundaPaginaC {
+  background-color: transparent;
+  background-image: url("../img/FondoMichelada.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.ContenidoPaginas__Back__SegundaPaginaC {
+  background-color: transparent;
+  background-image: url("../img/FondoMichelada.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.ContenidoPaginas__Front__TerceraPaginaC {
+  background-color: transparent;
+  background-image: url("../img/FondoCorona.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.ContenidoPaginas__Back__TercerPaginaC {
+  background-color: transparent;
+  background-image: url("../img/FondoCorona.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.Catalogo__Portada {
+  background: linear-gradient(brown, black);
+  width: calc(100% - 10px);
+  height: calc(100% - 20px);
+  border: 2px dotted #96069b;
+  position: absolute;
+  z-index: -3;
+  padding: 10px 0 0 0;
+  display: flex;
+  justify-content: space-around; }
+  .Catalogo__Portada__Frontend {
+    color: white;
+    width: 45%;
+    height: 99%;
+    background-image: url("../img/PortadaCocteles.jpg");
+    background-position: center;
+    font-family: "Merriweather", serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column; }
+    .Catalogo__Portada__Frontend__TextoFront {
+      width: 200px;
+      height: 180px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+  .Catalogo__Portada__Backend {
+    color: white;
+    width: 45%;
+    background-image: url("../img/PortadaCocteles.jpg");
+    background-position: center;
+    height: 99%;
+    display: block;
+    float: left;
+    font-family: "Merriweather", serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column; }
+
+.ContenidoPaginas__Btn2 {
+  width: 100px;
+  padding: 5px;
+  border: none;
+  background-color: #141414;
+  font-size: 15px;
+  color: #e3f0e3;
+  border-radius: 50px;
+  box-shadow: 0px 2px 5px rgba(105, 10, 85, 0.925); }
+  .ContenidoPaginas__Btn2:hover {
+    background-color: #d4dfc5;
+    font-size: 15px;
+    color: #142414; }
+
+.EfectoHoja {
+  transform: rotateY(-150deg);
+  transition: 5s; }
+
+.AboutUs {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/AboutUs2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  font-family: "Merriweather", serif; }
+  .AboutUs__Title {
+    font-size: 40px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 12%;
+    color: white; }
+  .AboutUs__Img {
+    width: 45%;
+    height: calc(100% - 90px);
+    margin: 45px 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .AboutUs__Introduction {
+    width: 50%;
+    margin: 45px 10px 10px 10px;
+    height: calc(100% - 90px);
+    display: flex;
+    align-items: center;
+    margin-top: 8%; }
+    .AboutUs__Introduction__Content {
+      width: 95%;
+      height: 80%;
+      margin-top: 15%; }
+      .AboutUs__Introduction__Content__Title {
+        text-transform: uppercase;
+        font-size: 35px;
+        color: white; }
+      .AboutUs__Introduction__Content__Text {
+        font-size: 15px;
+        text-transform: lowercase;
+        line-height: 2em;
+        color: yellow; }
+
+.Testimonials {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/Testimonios.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Merriweather", serif;
+  position: relative; }
+  .Testimonials__Content {
+    position: absolute;
+    margin: 5% 0 0 1%;
+    padding: 30px 0 100px 0; }
+  .Testimonials__Title {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    color: white;
+    font-size: 40px; }
+  .Testimonials__Card {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 360px;
+    gap: 1em; }
+    .Testimonials__Card__Content {
+      background: linear-gradient(maroon, #25258b);
+      width: 300px;
+      margin-left: 5px; }
+      .Testimonials__Card__Content__Img {
+        width: 100%;
+        height: 85%;
+        background-color: yellow;
+        position: relative;
+        transition: 1s; }
+      .Testimonials__Card__Content__Text {
+        width: 100%;
+        height: 15%;
+        text-align: center;
+        margin-top: 5%;
+        color: yellow; }
+      .Testimonials__Card__Content__Btn {
+        font-size: 35px;
+        color: black;
+        position: absolute;
+        top: 80%;
+        animation: BtnTestimonios 1s infinite; }
+      .Testimonials__Card__Content__TextHidden {
+        width: 100%;
+        background-color: transparent;
+        position: absolute;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        clip-path: circle(20% at 50% 96%);
+        transition: 1s; }
+        .Testimonials__Card__Content__TextHidden__Text {
+          margin-top: 60px;
+          padding: 10px;
+          line-height: 20px;
+          color: black;
+          font-size: 15px; }
+
+.Expandir {
+  clip-path: circle(100% at 50% 50%); }
+
+.Content1 {
+  background-image: url("../img/Juan.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center; }
+
+.Content2 {
+  background-image: url("../img/Maria.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center; }
+
+.Content3 {
+  background-image: url("../img/Carlos.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center; }
+
+.Content4 {
+  background-image: url("../img/Dayana.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center; }
+
+@keyframes BtnTestimonios {
+  0% {
+    top: 85%; } }
+
+.Contactanos {
+  width: 100%;
+  height: auto;
+  background-image: url("../img/Contactanos.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .Contactanos__Content__Title {
+    font-size: 30px;
+    color: white;
+    font-family: "Merriweather", serif;
+    text-align: center;
+    padding: 30px 0 0 0; }
+  .Contactanos__Content__Secondary {
+    width: calc(100% - 40px);
+    height: 80vh;
+    margin-top: 40px;
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1em; }
+    .Contactanos__Content__Secondary__Img {
+      width: 38%;
+      position: relative;
+      display: flex;
+      flex-direction: column; }
+    .Contactanos__Content__Secondary__Formulario {
+      background-color: transparent;
+      border-radius: 0 0 30px 0;
+      box-shadow: 0 20px 50px black;
+      width: 50%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin-bottom: 20px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap; }
+      .Contactanos__Content__Secondary__Formulario__Title {
+        text-align: center;
+        margin-top: 10px; }
+
+.Formulario__FirstSection {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5em;
+  grid-template-rows: 80px 80px;
+  margin: 15px 0 0 0; }
+
+.Formulario__Content {
+  width: 90%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 10px 0 0 10px; }
+  .Formulario__Content__Input {
+    width: 100%;
+    padding: 10px;
+    border: none; }
+    .Formulario__Content__Input__Text {
+      height: 70%;
+      width: calc(100% - 50px); }
+    .Formulario__Content__Input__Checkbok {
+      display: flex;
+      padding: 11px;
+      width: 90%; }
+    .Formulario__Content__Input__Submit {
+      background: linear-gradient(transparent, #161515);
+      text-align: center;
+      padding: 15px;
+      border: 2px solid #4834fa;
+      border-radius: 10px;
+      color: white;
+      font-size: 15px; }
+  .Formulario__Content__Textmsj {
+    padding: 10px;
+    width: 94%;
+    line-height: 40px;
+    height: 40%;
+    text-align: center;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; }
+  .Formulario__Content__Submit {
+    width: 200px;
+    margin-top: -10px;
+    text-align: center; }
+
+.Ubicacion {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/FondoContac.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .Ubicacion__Content {
+    position: relative;
+    height: 90%; }
+    .Ubicacion__Content__Title {
+      text-align: center;
+      font-size: 26px;
+      color: white;
+      font-family: "Merriweather", serif;
+      padding: 35px 0 0 0;
+      text-transform: uppercase; }
+    .Ubicacion__Content__map {
+      display: flex;
+      position: absolute;
+      width: 100%;
+      height: 90%;
+      gap: 2em; }
+      .Ubicacion__Content__map__google {
+        width: 63%;
+        height: 90%;
+        position: relative;
+        border: 0;
+        margin: 40px 0 0 70px; }
+      .Ubicacion__Content__map__Logo {
+        position: relative;
+        margin: 50px 0 0 100px;
+        width: 30px;
+        height: 200px; }
+
+.Footer {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(#161515, #4834fa);
+  position: absolute; }
+  .Footer__Contenido {
+    margin: 15% 20px 0 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 300px;
+    gap: 1em; }
+    .Footer__Contenido__section {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: "Merriweather", serif; }
+      .Footer__Contenido__section__Title {
+        font-size: 20px;
+        color: #4834fa; }
+      .Footer__Contenido__section__List {
+        list-style: none;
+        line-height: 35px;
+        color: white; }
+  .Footer__Copy {
+    font-size: "Merriweather", serif;
+    margin-top: 2%;
+    text-align: center;
+    padding-bottom: 20px;
+    color: white; }
+
+.LogoOnclub {
+  width: 200px;
+  height: 200px;
+  top: 15%;
+  left: 43%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .LogoOnclub__Main {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #161515;
+    border: 7px solid #4834fa; }
+    .LogoOnclub__Main__Text {
+      margin-top: 85px;
+      width: 200px;
+      font-size: 30px;
+      color: white;
+      text-align: center;
+      margin-left: -70px;
+      text-transform: uppercase; }
+  .LogoOnclub__Main::after {
+    content: "";
+    position: absolute;
+    top: 11%;
+    left: 5%;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 7px solid #ece8e8;
+    border-top: 2px solid #161515; }
+  .LogoOnclub__Main::before {
+    content: "";
+    position: absolute;
+    top: 6%;
+    left: 42%;
+    width: 10px;
+    z-index: 1;
+    height: 47px;
+    border-radius: 50px;
+    background-color: #ece2e2; }
+  .LogoOnclub__AboutUs {
+    position: absolute;
+    top: 46%;
+    left: 20%; }
+  .LogoOnclub__AboutUs1 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 0; }
+  .LogoOnclub__ContactUs {
+    position: absolute;
+    top: 27%;
+    left: 35%; }
+  .LogoOnclub__ContactUs1 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 0; }
+  .LogoOnclub__Footer {
+    position: absolute;
+    top: 10%;
+    left: 45%; }
+  .LogoOnclub__Footer1 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: 0; }
+  .LogoOnclub__Ubicacion {
+    position: absolute; }
+  .LogoOnclub__Ubicacion1 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: 150px; }
