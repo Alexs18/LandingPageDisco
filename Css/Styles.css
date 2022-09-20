@@ -171,7 +171,7 @@
   height: calc(100vh + 100px);
   background: linear-gradient(#161515, #4834fa 950px, #642d64 600px);
   position: relative;
-  background-image: url("/img/OnclubInit3.jpg");
+  background-image: url("/Practicas/LandingPageOnClub/img/OnclubInit3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -291,7 +291,7 @@
     color: white; }
 
 .Tarjeta1 {
-  background-image: url("/img/BarraLibre.jpg");
+  background-image: url("/Practicas/LandingPageOnClub/img/BarraLibre.jpg");
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: cover;
@@ -313,7 +313,7 @@
   left: 50px; }
 
 .Tarjeta2 {
-  background-image: url("/img/GrupoMasAnimado.jpg");
+  background-image: url("/Practicas/LandingPageOnClub/img/GrupoMasAnimado.jpg");
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: cover;
@@ -335,7 +335,7 @@
   left: 50px; }
 
 .Tarjeta3 {
-  background-image: url("/img/EventosEnVivo.jpg");
+  background-image: url("/Practicas/LandingPageOnClub/img/EventosEnVivo.jpg");
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: cover;
