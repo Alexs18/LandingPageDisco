@@ -168,23 +168,21 @@
 
 .Events {
   width: 100%;
-  height: calc(100vh + 100px);
+  height: 100vh;
   background: linear-gradient(#161515, #4834fa 950px, #642d64 600px);
-  position: relative;
-  background-image: url("/Practicas/LandingPageOnClub/img/OnclubInit3.jpg");
+  position: absolute;
+  background-image: url("/img/OnclubInit3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
 
 .Eventos {
   display: flex;
-  background-color: red;
-  padding: 0 20px 0 20px;
+  padding: 0 10px 0 10px;
   position: relative;
   gap: 0.5em; }
   .Eventos__Contenido {
-    margin: 145px 0 0 0;
-    background-color: yellow; }
+    margin: 145px 0 0 0; }
   .Eventos__Titulo {
     text-align: center;
     color: white;
@@ -248,7 +246,8 @@
 .Servicios {
   background-color: #161515;
   height: 100vh;
-  width: 100%; }
+  width: 100%;
+  position: absolute; }
   .Servicios__Title {
     position: absolute;
     color: white;

@@ -1,24 +1,22 @@
 .Events{
     width: 100%;
-    height: calc(100vh + 100px);
+    height: 100vh;
     background:linear-gradient($NeutralColor, $PrimaryColor 950px, $ThearColor 600px);
-    position: relative;
-    background-image: url("/Practicas/LandingPageOnClub/img/OnclubInit3.jpg");
+    position: absolute;
+    background-image: url("/img/OnclubInit3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .Eventos{
     display: flex;
-    background-color: red;
-    padding: 0 20px 0 20px;
+    padding: 0 10px 0 10px;
     position: relative;
     //grid-template-columns: repeat(2, 1fr);
     gap: 0.5em;
     //grid-template-rows: 600px;
     &__Contenido{
         margin: 145px 0 0 0;
-        background-color: yellow;
     }
     &__Titulo{
         text-align: center;
