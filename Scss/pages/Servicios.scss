@@ -6,7 +6,6 @@
     background-origin: initial;
 }
 @mixin  Precio {
-        position: absolute;
         content: "Free";
         background-color: rgb(38, 0, 255);
         width: 60px;
@@ -14,7 +13,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        color: yellow;
         font-size: 22px;
         left: 50px;
     
@@ -23,7 +21,7 @@
     background-color: $NeutralColor;
     height: 100vh;
     width: 100%;
-    position: absolute;
+    position: relative;
     &__Title{
         position: absolute;
         color:$NeutralColor1;
@@ -74,7 +72,7 @@
 .Tarjeta{
     
     &1{
-        background-image: url("/Practicas/LandingPageOnClub/img/BarraLibre.jpg");
+        background-image: url("../img/BarraLibre.jpg");
         @include BackgroundImg;
         position: relative;
     }
@@ -82,7 +80,7 @@
         @include Precio;
     }
     &2{
-        background-image: url("/Practicas/LandingPageOnClub/img/GrupoMasAnimado.jpg");
+        background-image: url("../img/GrupoMasAnimado.jpg");
         @include BackgroundImg;
         position: relative;
     }
@@ -90,7 +88,7 @@
         @include Precio;
     }
     &3{
-        background-image: url("/Practicas/LandingPageOnClub/img/EventosEnVivo.jpg");
+        background-image: url("../img/EventosEnVivo.jpg");
         @include BackgroundImg;
         position: relative;
     }

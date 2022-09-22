@@ -167,16 +167,21 @@
     box-shadow: 0px 10px 10px black; }
 
 .Events {
+  margin: -50px 0 0 0;
+  padding: 0 0 30px 0;
   width: 100%;
   height: 100vh;
   background: linear-gradient(#161515, #4834fa 950px, #642d64 600px);
-  position: absolute;
+  position: relative;
   background-image: url("/img/OnclubInit3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
+  .Events__Title__Main__Sub1 {
+    margin: 50px 0 0 0; }
 
 .Eventos {
+  margin: -90px 0 0 0;
   display: flex;
   padding: 0 10px 0 10px;
   position: relative;
@@ -247,7 +252,7 @@
   background-color: #161515;
   height: 100vh;
   width: 100%;
-  position: absolute; }
+  position: relative; }
   .Servicios__Title {
     position: absolute;
     color: white;
@@ -290,7 +295,7 @@
     color: white; }
 
 .Tarjeta1 {
-  background-image: url("/Practicas/LandingPageOnClub/img/BarraLibre.jpg");
+  background-image: url("../img/BarraLibre.jpg");
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: cover;
@@ -299,7 +304,6 @@
   position: relative; }
 
 .Tarjeta1::after {
-  position: absolute;
   content: "Free";
   background-color: #2600ff;
   width: 60px;
@@ -307,12 +311,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: yellow;
   font-size: 22px;
   left: 50px; }
 
 .Tarjeta2 {
-  background-image: url("/Practicas/LandingPageOnClub/img/GrupoMasAnimado.jpg");
+  background-image: url("../img/GrupoMasAnimado.jpg");
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: cover;
@@ -321,7 +324,6 @@
   position: relative; }
 
 .Tarjeta2::after {
-  position: absolute;
   content: "Free";
   background-color: #2600ff;
   width: 60px;
@@ -329,12 +331,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: yellow;
   font-size: 22px;
   left: 50px; }
 
 .Tarjeta3 {
-  background-image: url("/Practicas/LandingPageOnClub/img/EventosEnVivo.jpg");
+  background-image: url("../img/EventosEnVivo.jpg");
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: cover;
@@ -343,7 +344,6 @@
   position: relative; }
 
 .Tarjeta3::after {
-  position: absolute;
   content: "Free";
   background-color: #2600ff;
   width: 60px;
@@ -351,7 +351,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: yellow;
   font-size: 22px;
   left: 50px; }
 
