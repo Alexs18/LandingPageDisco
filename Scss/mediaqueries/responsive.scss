@@ -1,0 +1,67 @@
+@media only screen and (max-width: 1200px) {
+    .Header{
+        &__TextHeader{
+            margin: 30px 20px 20px 0 ;
+        }
+        &__Btn{
+            margin: 30px 20px 0 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .Header{
+        background-color: rgb(10, 10, 44);
+        &__TextHeader{
+
+            margin-top: 50px;
+            margin-right: 200px;
+        }
+        &__logo{
+            width: 100%;
+            background-color: yellow;
+        }
+    }
+    .LogoOnclub{
+        margin: 0 100px 0 0 ;
+    }
+}
+@media only screen and (max-width:984px) {
+    .Header{
+        background-color: rgb(10, 10, 44);
+        &__TextHeader{
+          width: 100%;
+          margin: 30px -300px;
+        }
+    }
+    .Header1{
+        &__PrimaryText{
+            width: 100%;
+        }
+    }
+    .LogoOnclub{
+        margin-top: 0px;
+        margin-right: 300px;
+    }
+}
+@media only screen and (max-width:810px){
+    .Header{
+        background-color: rgb(10, 10, 44);
+        &__TextHeader{
+          width: 100%;
+          margin: 30px -230px;
+        }
+    }
+}
+@media only screen and (max-width:480px){
+    .Header{
+        background-color: rgb(10, 10, 44);
+        &__TextHeader{
+          width: 100%;
+          margin: 0px -138px;
+        }
+        &__Btn{
+            margin: -28px 0px 0 0;
+        }
+    }
+}
