@@ -52,6 +52,23 @@
           margin: 30px -230px;
         }
     }
+    .Events{
+        height: auto;
+    }
+    .Eventos{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .Contenido1{
+        width: 100%;
+    }
+    .Contenido2{
+        width: 100%;
+        margin: 0;
+    }
 }
 @media only screen and (max-width:480px){
     .Header{
@@ -63,5 +80,22 @@
         &__Btn{
             margin: -28px 0px 0 0;
         }
+    }
+    .Events{
+        height: auto;
+    }
+    .Eventos{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .Contenido1{
+        width: 100%;
+    }
+    .Contenido2{
+        margin: 0;
+        width: 100%;
     }
 }
